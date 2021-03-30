@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -e
+
+script/build
+cd pkg && tar -cvzf ../dist/release.tar.gz owl_wasm.js owl_wasm_bg.wasm
